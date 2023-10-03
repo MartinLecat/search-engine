@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+</head>
+
+<body>
+    <div id="app">
+        <div style="display: flex; flex-direction: column;">
+            <div style="display: flex;">
+                <input type="text" id="search-input" style="flex: 1 0 auto">
+                <select id="search-in" multiple></select>
+            </div>
+            <div style="display: flex;">
+                <div style="display: flex; flex-direction: column; width: 50%">
+                    <span>Sync</span>
+                    <div id="search-timing-sync">&nbsp;</div>
+                    <textarea name="" id="search-output-sync" cols="50" rows="600"></textarea>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 50%">
+                    <span>Async</span>
+                    <div id="search-timing-async">&nbsp;</div>
+                    <textarea name="" id="search-output-async" cols="50" rows="600"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
